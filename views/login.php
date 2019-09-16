@@ -8,7 +8,21 @@
     </head>
     <body>
         <div class = "login-area">
-        
+            <form method = "POST">
+                <input type = "email" name = "email" required placeholder = "Digite seu email: " />
+                <input type = "password" name = "password" required placeholder = "Digite sua senha: " />
+                <input type = "submit" value = "Entrar" /><br />
+
+                <?php 
+                    if(isset($error) && !empty($error) ) {
+                ?>
+                    <div class = "warning" >
+                        <?= $error; ?>
+                    </div>
+                <?php 
+                    }
+                ?>
+            </form>
         </div>
 
     </body>

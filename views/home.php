@@ -1,1 +1,1 @@
-HOME
+<?= $company_name; ?>

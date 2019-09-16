@@ -12,8 +12,14 @@
         }
 
         public function index() {
-            $dados = array();
+            $data = array();
+            $u = new Users();
+            $u -> setLoggedUser();
+            $company = new Companies($u -> getCompany());
 
-            $this -> loadTemplate('home', $dados);
+            $data['company_name'] = $company -> getName();
+            $data['user_email'] = $u -> getEmail();
+
+            $this -> loadTemplate('home', $data);
         }
     } 
