@@ -29,7 +29,7 @@ body {
     height: 40px;
     background-color: #232830;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .top-right {
@@ -45,3 +45,39 @@ body {
     text-decoration: none;
 }
 
+.menu-area {
+    color: #fff;
+}
+
+.menu-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-area li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    padding-left: 30px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+}
+
+.menu-area li:hover {
+    background-color: #2a2e35;
+}
+.menu-area li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-area li:nth-child(1) {
+    background-image: url('../images/home.png');
+}
+
+.menu-area li:nth-child(2) {
+    background-image: url('../images/key.png');
+}
